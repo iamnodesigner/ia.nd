@@ -1,0 +1,360 @@
+/*
+ * Initial
+ */
+@import url('https://rsms.me/inter/inter.css');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	background: none;
+	border: none;
+	font-family: 'Inter', sans-serif;
+}
+html, body{
+	width: 100%;
+	height: 100vh;
+
+}
+p, a{
+	font-size: 10pt
+}
+.transition-fade {
+	opacity: 1;
+	transition: 500ms;
+	transform: translateX(0);
+	transform-origin: right;
+}
+html.is-animating .transition-fade {
+	opacity: 1;
+	transform: translateX(100%);
+}
+html.is-leaving .transition-fade {
+	opacity: 0;
+}
+/*
+ * DARK AND LIGHT MODE ---------------------------------------------------------
+ */
+.light{
+	background: #dadada;
+  color: #333;
+	transition: 0.5s;
+}
+.dark{
+	background: #222;
+	color: #dadada;
+	transition: 0.5s;
+}
+
+.light a{
+	color: #333;
+	transition: 0.5s;
+}
+
+.dark a{
+	color: #dadada;
+	transition: 0.5s;
+}
+.hovered-link a{
+	color: #333;
+	font-weight: bold;
+}
+.hovered-link p{
+	color: #333;
+	font-weight: bold;
+}
+/*----------------------------------------------------------------------------*/
+
+
+/*
+ * HEADER ----------------------------------------------------------------------
+ */
+.nav{
+	position: relative;
+	justify-content: space-between;
+	width: 80%;
+	height: 10%;
+  left: 10%;
+  display: flex;
+}
+.header{
+	display: flex;
+}
+.theme{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.theme p{
+	padding: 10px;
+}
+.container-logo{
+  width: 80px;
+  height: 80px;
+  background: #333;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.logo{
+  color: #dadada;
+  line-height: 1;
+  padding: 10px;
+}
+.container-logo:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 0.5s ease;
+}
+.nav-wrapper{
+  padding: 10px;
+}
+
+
+input[type="checkbox"]{
+	-webkit-appearance: none;
+	visibility: hidden;
+	display: none;
+}
+.check {
+	position: relative;
+	z-index: -1;
+	display: block;
+	width: 40px;
+	height: 20px;
+	background: #fff;
+	cursor: pointer;
+	border-radius: 20px;
+	overflow: hidden;
+	transition: ease-in 0.4s;
+}
+input[type="checkbox"]:checked ~ .check{
+	background: #333;
+	box-shadow: 0 0 0 2000px  #222;
+}
+.check:before{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background: #333;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ .check:before{
+	transform: translateX(-50px);
+}
+.check:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	background: #dadada;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	transition: 0.5s;
+	transform: translateX(50px);
+}
+input[type="checkbox"]:checked ~ .check:after{
+	transform: translateX(0px);
+}
+
+/*----------------------------------------------------------------------------*/
+
+/*
+ * SECTION ---------------------------------------------------------------------
+ */
+section{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 75%;
+}
+.bg{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 195pt;
+	opacity: 0.04;
+	overflow: hidden;
+}
+.rectangle{
+	border: 35px solid;
+	border-image-source: linear-gradient(120deg, #a1dff3, #ffc9c7);
+	border-image-slice: 1;
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	opacity: 0.7;
+	right: 10%;
+	z-index: 1;
+}
+.container-text{
+	position: absolute;
+	left: 10%;
+	z-index: 1;
+}
+.text{
+	margin-left: 80px;
+	padding: 10px;
+	left: 25%;
+}
+.text h1{
+	font-size: 100pt;
+	line-height: 0.9;
+}
+.text p{
+	font-size: 20pt;
+	line-height: 1;
+}
+ /*----------------------------------------------------------------------------*/
+
+
+/*
+ * FOOTER ----------------------------------------------------------------------
+ */
+footer{
+	width: 100%;
+	height: 15%;
+}
+.container-footer{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	left: 10%;
+	height: 100%;
+}
+.cont{
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 10px;
+	width: 50%;
+	height: 100%;
+}
+.cont1{
+	width: 50%;
+}
+.cont2{
+	width: 50%;
+}
+.cont3{
+	text-align: right;
+}
+ /*---------------------------------------------------------------------------*/
+.cursor{
+	width: 3rem;
+	height: 3rem;
+	border: 2px solid #ffc9c7;
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	transition: all 0.3s ease;
+	transition-property: background, transform;
+	transform-origin: 100% 100%;
+}
+.link-grow{
+	transform: scale(2);
+	background: #ffc9c7;
+}
+
+ /*
+  * QUERY ----------------------------------------------------------------------
+  */
+@media screen and (max-width: 414px){
+	p{
+		font-size: 9pt
+	}
+	.nav{
+		width: 100%;
+		left: 0;
+		display: flex;
+		justify-content: center;
+	}
+	.container-logo{
+		margin-left: 10px;
+		width: 70px;
+		height: 70px;
+	}
+	.nav-wrapper ul{
+		display: flex;
+	}
+	.nav-wrapper li{
+		margin-top: 13px;
+		margin-right: 10px;
+	}
+	.theme{
+		display: none;
+	}
+	.logo h1{
+		font-size: 20pt
+	}
+	.rectangle{
+		border: 28px solid;
+		border-image-source: linear-gradient(120deg, #a1dff3, #ffc9c7);
+		border-image-slice: 1;
+	}
+}
+@media screen and (max-width: 630px){
+	.rectangle{
+		margin-right: -50%;
+	}
+}
+@media screen and (max-width: 767px){
+	.text h1{
+		font-size: 50pt;
+	}
+	.text p{
+		font-size: 12pt
+	}
+	.container-footer{
+		flex-direction: column;
+		width: 100%;
+		left: 0;
+	}
+	.cont{
+		flex-direction: column;
+		height: auto;
+		width: 100%;
+	}
+	.cont1{
+		width: 100%;
+		text-align: center;
+	}
+	.cont2{
+		width: 100%;
+		margin-top: 14px;
+		text-align: center;
+	}
+	.cont3{
+		width: 100%;
+		text-align: center;
+	}
+	.cursor{
+		display: none
+	}
+}
+@media screen and (max-width: 900px){
+	.rectangle{
+		width: 400px;
+		height: 400px;
+	}
+	.bg{
+		display: none;
+	}
+	.text{
+		margin-left: 0;
+		padding: 0;
+	}
+}
+ /*---------------------------------------------------------------------------*/
