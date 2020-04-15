@@ -1,0 +1,241 @@
+.section{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+.bg-active{
+	background-color: #ddd;
+}
+.cont{
+	width: 100%;
+	margin-top: 10%;
+	position: relative;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.description{
+	margin-top: 20px;
+	color: #fff;
+	font-size: 20pt;
+	overflow: hidden;
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+}
+.div{
+	height: 35px;
+	overflow: hidden;
+}
+.list{
+	position: relative;
+	margin-left: 10px;
+	text-align: left;
+	-webkit-animation-name: change;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.list-item{
+}
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+@-o-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+@-moz-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+.bg{
+	width: 80%;
+	height: 60%;
+	position: absolute;
+}
+.bg img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	object-fit: cover;
+}
+.img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url(../img/img3.jpg);
+	background-size: cover;
+	overflow: hidden;
+}
+.bg-img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #222;
+	opacity: 0.6;
+}
+.title{
+	width: 80%;
+	margin-top: 80px;
+	height: 70vh;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #ddd;
+	z-index: 4;
+	mix-blend-mode: difference;
+}
+.title h1{
+	font-size: 70pt;
+	font-weight: 900;
+	line-height: 1;
+}
+.fx{
+	margin-top: -10%;
+	height: 10%;
+	overflow: hidden;
+}
+.fx h1{
+	-webkit-text-stroke: 2px;
+	-webkit-text-fill-color: transparent;
+	opacity: 0.5;
+}
+.text{
+	width: 50%;
+	text-align: center;
+}
+.l{
+	color: #ddd;
+}
+.d{
+	color: #222;
+}
+.text h1{
+	font-size: 4vw;
+}
+.text h2{
+	font-size: 20pt;
+	font-weight: 300;
+}
+.text a{
+	font-weight: 500;
+}
+.l a{
+	color: #ddd;
+}
+.l a:hover{
+	color: #fff;
+	font-weight: 600;
+}
+.d a{
+	color: #222;
+}
+.d a:hover{
+	color: #111;
+	font-weight: 600;
+}
+#emoji{
+	transition: all 0.5s ease;
+}
+.projects{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.card{
+	width: 450px;
+	height: 450px;
+	margin-top: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: .5s ease;
+}
+.item{
+	width: 300px;
+	height: 300px;
+	margin-top: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: .5s ease;
+}
+.card:hover .info {
+  opacity: 1;
+}
+.item:hover .info {
+  opacity: 1;
+}
+.info{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: #e6b200;
+}
+.info h2{
+	color: #222;
+	text-align: center;
+}
+.card img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+.item img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+.card h2{
+	color: #222;
+}

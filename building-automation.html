@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>iam.nodesigner | Building Automation</title>
+		<link rel="stylesheet" href="style/style.css">
+
+		<!-- icons -->
+		<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+		<!-- gsap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+		<!-- AnimeJS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+		<!-- JQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+  <body>
+		<div class="cursor"></div>
+		<div class="mouse"></div>
+    <header>
+      <nav>
+				<div class="logo-mobile">
+					<a href="index.html#index">
+						<div>
+							<p>iam<span style="color: #a1dff3">.</span>nodesigner</p>
+						</div>
+					</a>
+				</div>
+    		<input type="checkbox" id="nav" class="hidden">
+    		<label for="nav" class="nav-btn">
+    			<i></i>
+    			<i></i>
+    			<i></i>
+    		</label>
+    		<div class="nav-wrapper" id="nav-wrapper">
+    	  	<ul>
+            <li>
+              <a href="#index">
+          	    <div class="logo">
+          	     	<p>iam<span style="color: #a1dff3">.</span><br>nodesigner</p>
+          	    </div>
+              </a>
+            </li>
+      	    <li><a href="index.html#index">Home</a></li>
+      	    <li><a href="index.html#projects">Projects</a></li>
+      	    <li><a href="index.html#downloads">Downloads</a></li>
+      	    <li><a href="index.html#contact">Contact</a></li>
+    	    </ul>
+    	  </div>
+    	</nav>
+    </header>
+
+		<div class="section" id="index">
+			<div class="bg">
+				<img src="img/img11.jpg" alt="">
+			</div>
+			<div class="title">
+				<div class="fx">
+					<h1>BUILDING AUTOMATION</h1>
+				</div>
+				<h1>BUILDING AUTOMATION</h1><br>
+				<p>scroll</p>
+			</div>
+		</div>
+
+    <div class="intro">
+      <div class="project-info" id="info">
+				<h1>Building Automation</h1><br>
+        <p>nov 2018 - gen 2019</p>
+        <p>Internet of Things Project</p>
+        <p>Polytechnic of Bari</p><br>
+      </div>
+      <div class="project-text">
+        <p>This project present a possible solution whereby the user controls devices by
+          using their mobile phone, where control is communicated to the microcontroller
+          through its bluetooth interface. The main goal of this project is to manage two
+          different environments (for example home and workplace) using one app mobile.</p><br><br>
+        <h2>How it work</h2><br>
+        <p>- Two environments: house and office; <br>
+          - Support that uses NFC technology at the entrance of the two environments; <br>
+          - NFC tags included in the keychains of the keys, that encode the two differents environments; <br>
+          - Communication between the support that recognizes the tag and android app,
+            for our smartphone to open the app page of the recognized environment; <br>
+          - Several action doable through the app page according to the environment i am input
+            (i.e. turning on/off the lights; checking the temperature..)</p><br><br>
+          <h2>ESP32</h2><br>
+          <p>The main feature of this new chip are the following: <br>
+             - Dual-core 240 MHz LX6 Tensilic Processor; <br>
+             - 520Kb of SDRAM memory; <br>
+             - WiFi connectivity 802.11 b / g / n; <br>
+             - Bluetooth connectivity (classic and LE); <br>
+             - 32 I/ O PINs with different devices available; <br>
+             - hardware acceleration for security algorithms.</p><br><br>
+             <h2>RC522</h2>
+             <p>Mifare RC522 is the high integrated RFID card reader which works on non-contact 13.56mhz
+                communication, is designed by NXP as a low power consumption, low cost and compact
+                size read and write chip, is the best choice in the development of smart meters and portable hand-held devices.</p><br><br>
+            <h2>MAIN ACTIVITY</h2><br>
+            <p>Pair with ‘ESP32 serial’ and approach the NFC tags that will direct you to the right screen (home or work)</p><br>
+				<img src="img/img12.jpg" alt="">
+				<img src="img/img13.jpg" alt=""><br><br>
+            <h2>Energy harvesting</h2>
+            <p>- Shutter mounted on a servomotor; <br>
+               - Two photocells on the shutter; <br>
+              - Servomotor steadily moving to reset the difference of light intensity perceived by the two photocells -> Maximum efficency; <br>
+              - Solar panel mounted on the shutter; <br>
+              - Average harvesting of 450mW.</p><br><br>
+            <h2>Consumption</h2><br>
+            <p>- ESP32 works in sleep mode, reducing consumption; <br>
+               - Bluetooth Low Energy (BLE); <br>
+               - The average power consumption is 13,11 mW.</p><br><br>
+
+      </div>
+    </div>
+
+		<div class="footer p" id="footer">
+			<div class="parts">
+				<div class="part">
+					<h3>Information</h3><br>
+					<p>I'm Armando Resta</p>
+					<p>iam.nodesigner@hotmail.com</p>
+					<p>+39 3664698610</p>
+				</div>
+
+				<div class="part">
+					<h3>Social</h3><br>
+					<a href="#"> GitHub </a><br>
+					<a href="#"> Instagram </a><br>
+					<a href="#"> Linkedin </a><br>
+				</div>
+
+				<div class="part">
+					<h3>Current availability</h3><br>
+          <p>J2EE (Java Enterprise Edition)</p>
+          <p>Software engineer</p>
+				</div>
+
+				<div class="part">
+					<h3>Sections</h3><br>
+					<a href="#index"> Home </a><br>
+					<a href="#projects"> Projects </a><br>
+					<a href="#downloads"> Downloads </a><br>
+					<a href="#contact"> Contact </a><br>
+				</div>
+			</div>
+			<p>©Copyright 2020</p>
+			<p>Site by iam.nodesigner</p>
+		</div>
+
+    <script src="js/project.js"></script>
+  </body>
+</html>

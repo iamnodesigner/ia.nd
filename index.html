@@ -3,82 +3,238 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>iam.nodesigner | Home</title>
-		<link rel="stylesheet" href="/iam.nodesigner/style/style.css">
-		<script defer src="lib/node_modules/swup/dist/swup.min.js"></script>
-    <script defer src="/iam.nodesigner/js/main.js"></script>
+		<link rel="stylesheet" href="style/style.css">
+
+		<!-- icons -->
+		<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+		<!-- gsap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+		<!-- AnimeJS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+		<!-- JQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body id="body">
+
+  <body>
 		<div class="cursor"></div>
-    <div class="nav">
-			<div class="header">
-				<div class="container-logo">
-	        <a href="./index.html">
-	          <div class="logo">
-	            <h1>IA<span style="color: #a1dff3">.</span><br>ND</h1>
-	          </div>
-	        </a>
-	      </div>
-	      <div class="nav-wrapper">
-	            <ul>
-	              <li><a href="/iam.nodesigner/index.html"><p>Home</p></a></li>
-	              <li><a href="/iam.nodesigner/portfolio.html"><p>Portfolio</p></a></li>
-	              <li><a href="/iam.nodesigner/wallpaper.html"><p>Downloads</p></a></li>
-	              <li><a href="/iam.nodesigner/contact.html"><p>Contact</p></a></li>
-	            </ul>
-	      </div>
-			</div>
-			<div class="theme">
-				<p id="light">Light</p>
-				<label>
-					<input type="checkbox" id="mycheck" onclick="check()">
-					<span class="check"></span>
+		<div class="mouse"></div>
+    <header>
+      <nav>
+				<div class="logo-mobile">
+					<a href="#index">
+						<div>
+							<p>iam<span style="color: #a1dff3">.</span>nodesigner</p>
+						</div>
+					</a>
+				</div>
+				<input type="checkbox" id="nav" class="hidden">
+				<label for="nav" class="nav-btn">
+					<i></i>
+					<i></i>
+					<i></i>
 				</label>
-				<p id="dark">Dark</p>
-			</div>
-    </div>
+    		<div class="nav-wrapper" id="nav-wrapper">
+    	  	<ul>
+            <li>
+              <a href="#index">
+          	    <div class="logo">
+          	     	<p>iam<span style="color: #a1dff3">.</span><br>nodesigner</p>
+          	    </div>
+              </a>
+            </li>
+      	    <li><a href="#index">Home</a></li>
+      	    <li><a href="#projects">Projects</a></li>
+      	    <li><a href="#downloads">Downloads</a></li>
+      	    <li><a href="#contact">Contact</a></li>
+    	    </ul>
+    	  </div>
+    	</nav>
+    </header>
 
-		<section id="swup" class="transition-fade">
+		<div class="section" id="index">
 			<div class="bg">
-				<h1>HELLO</h1>
+				<div class="img"></div>
+				<div class="bg-img"></div>
 			</div>
-			<div class="rectangle"></div>
-			<div class="container-text">
-				<div class="text">
-					<h1>I'm no <br>designer </h1><br><br>
-					<p>Minimalism, efficienty and great <br>
-					design are must-haves in my projects. <br>
-				  Visit my portfolio to learn more</p><br><br>
-					<button><a href="/iam.nodesigner/portfolio.html"> <p> <b>Learn more -></b> </p> </a></button>
+			<div class="title">
+				<div class="fx">
+					<h1>I AM NO DESIGNER</h1>
+				</div>
+				<h1>I AM NO DESIGNER</h1>
+				<div class="description">
+						<p> but I'm</p>
+						<div class="div">
+							<ul class="list">
+								<li class="list-item">an <b>engineer !</b> </li>
+								<li class="list-item">your <b>friend !</b> </li>
+								<li class="list-item">a <b>developer !</b> </li>
+								<li class="list-item"> <b>curious !</b> </li>
+							</ul>
+						</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cont" id="projects">
+			<div class="text d project">
+				<h1>Hello! <span id="emoji">&#128075;</span> </h1><br>
+				<h2 class="p-1">I'm
+				<span style="font-weight: 500" class="project-overlay">Armando Resta</span>,
+				a software engineer with a few years of work experience.
+				I deal with back-end and front-end development, IoT solutions and
+				I am really interested in graphic design. Learn more about my projects.</h2><br><br>
+			</div>
+			<div class="projects">
+				<div class="card">
+					<img src="img/img7.jpg" alt="">
+					<div class="info">
+						<h2>Crowdsourcing Platform</h2>
+						<a href="crowdsourcing-platform.html"><p>learn more</p></a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/img11.jpg" alt="">
+					<div class="info">
+						<h2>Building Automation</h2>
+						<a href="building-automation.html"><p>learn more</p></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cont" id="downloads">
+			<div class="text d project">
+				<h1>Downloads! <span id="emoji">&#128540;</span> </h1><br>
+				<h2>Download here the items you want to incorporate in your code!</h2><br><br>
+			</div>
+			<div class="projects">
+				<div class="item">
+					<img src="img/img2.jpg" alt="">
+					<div class="info">
+						<h2>Item</h2>
+						<a href=""><ion-icon name="download-outline"></ion-icon></a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/img4.jpg" alt="">
+					<div class="info">
+						<h2>Item</h2>
+						<a href=""><ion-icon name="download-outline"></ion-icon></a>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/img5.jpg" alt="">
+					<div class="info">
+						<h2>Item</h2>
+						<a href=""><ion-icon name="download-outline"></ion-icon></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<div class="contact" id="contact">
+				<div class="bgcontact">
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+					<h1>CONTACT ME</h1>
+				</div>
+
+				<div class="contact-text">
+					<h1>CONTACT ME</h1>
+
+					<div class="gif">
+						<img class="large" src="img/gif.gif" alt="">
+						<img class="small" src="img/gif-mobile.gif" alt="">
+					</div>
+
+					<div class="wash">
+						<h1>AND THEN</h1>
+						<h1>WASH YOUR HANDS</h1>
+					</div>
 				</div>
 			</div>
 
-		</section>
+				<div class="mailchimp">
+					<div id="mc_embed_signup" class="input">
+						<form action="https://github.us19.list-manage.com/subscribe/post?u=9bf1f2161823483583594a7be&amp;id=e38ef51035"
+									method="post" id="mc-embedded-subscribe-form"
+									name="mc-embedded-subscribe-form"
+									class="validate"
+									target="_blank"
+									novalidate>
+						    <div id="mc_embed_signup_scroll">
+									<h2>Get in touch!</h2><br>
+									<p id="mailchimp">Thank you for getting this far, leave me your email right here and
+										I'll contact you for a consultation on how to make your company's presence effective on the net.</p>
+										<div class="form">
+											<input type="text" name="FNAME" id="mce-FNAME" autocomplete="off" required>
+											<label for="mce-EMAIL" class="label-name"> <span class="content-name">Name</span> </label>
+										</div>
 
-		<footer>
-			<div class="container-footer">
-				<div class="cont">
-					<div class="cont1">
-						<p> Hello, <br>i'm <b>Armando Resta</b> <br> <br> Social <br>
-							<b>
-								<a href="">LI</a>
-								<a href="">GH</a>
-								<a href="">IG</a>
-							</b> </p>
-					</div>
-					<div class="cont2">
-						<p>Email <br> <b>iamnodesigner@hotmail.com</b> <br> <br>Phone <br> <b>+39 3664698610</b> </p>
-					</div>
+										<div class="form">
+											<input type="text" name="EMAIL" id="mce-EMAIL" autocomplete="off" required>
+											<label for="mce-FNAME" class="label-name"> <span class="content-name">Email</span> </label>
+										</div>
+									</div>
+
+									<div id="mce-responses" class="clear">
+											<div class="response" id="mce-error-response" style="display:none"></div>
+											<div class="response" id="mce-success-response" style="display:none"></div>
+										</div>
+									    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9bf1f2161823483583594a7be_e38ef51035" tabindex="-1" value=""></div>
+									    <div class="clear"><button type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button">send</button></div>
+								</form>
+						</div>
 				</div>
-				<div class="cont">
-					<div class="cont3">
-						<p>©Copyright 2020 <br>Site by <a href="/iam.nodesigner/index.html"><b>iam.nodesigner</b></a> </p>
+
+				<div class="footer" id="footer">
+					<div class="parts">
+						<div class="part">
+							<h3>Information</h3><br>
+							<p>I'm Armando Resta</p>
+							<p>iam.nodesigner@hotmail.com</p>
+							<p>+39 3664698610</p>
+						</div>
+
+						<div class="part">
+							<h3>Social</h3><br>
+							<a href="#"> GitHub </a><br>
+							<a href="#"> Instagram </a><br>
+							<a href="#"> Linkedin </a><br>
+						</div>
+
+						<div class="part">
+							<h3>Current availability</h3><br>
+							<p>J2EE (Java Enterprise Edition)</p>
+							<p>Software engineer</p>
+						</div>
+
+						<div class="part">
+							<h3>Sections</h3><br>
+							<a href="#index"> Home </a><br>
+							<a href="#projects"> Projects </a><br>
+							<a href="#downloads"> Downloads </a><br>
+							<a href="#contact"> Contact </a><br>
+						</div>
 					</div>
+					<p>©Copyright 2020</p>
+					<p>Site by iam.nodesigner</p>
 				</div>
-			</div>
-		</footer>
 
-
-	</body>
+		<script src="js/main.js"></script>
+  </body>
 </html>
